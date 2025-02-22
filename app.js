@@ -12,7 +12,7 @@ app.get('/demotrx', async (req, res) => {
         res.send('REFF#' + idtrx + ' Trx SP1000.' + tujuan + ' GAGAL NOMOR SALAH,Harga: 33.750 SN: Sisa Saldo: 271.548.777 - 33.750 = 271.515.027 @2/22/2025 4:07:31 AM');
     } else {
         if (tujuan.substring(0, 4) == '0812') {
-            await delay(10000);
+            await delay(15000);
             res.json({
                 msg: ' REFF#' + idtrx + ' Trx SP1000.' + tujuan + ' BERHASIL,Harga: 33.750 SN: 0491520250222040727X47 Sisa Saldo: 271.548.777 - 33.750 = 271.515.027 @2/22/2025 4:07:31 AM',
             })
